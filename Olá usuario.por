@@ -1,7 +1,9 @@
 programa {
   funcao inicio() {
-   escreva("Olá usuário")
-   escreva("\n\nSeja bem vindo")
-   escreva("\nTô manjando de portugol😎")
+  inteiro idadeDoUsuario  
+ idadeDoUsuario = 19 
+ escreva("Idade: " + idadeDoUsuario)
+ idadeDoUsuario = 20
+ escreva("\nNova idade: " + idadeDoUsuario)
   }
 }
