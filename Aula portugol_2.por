@@ -1,19 +1,20 @@
 programa {
-  funcao inteiro soma(inteiro valor1, inteiro valor2){
-  retorne valor1 + valor2
+  inclua biblioteca Matematica
+  funcao real calcularDesconto(real preco){
+    se(preco>=100){
+      retorne preco * 0.9
+    } senao {
+      retorne preco 
+    }
   }
-
-  funcao inteiro multiplicacao(inteiro valor1, inteiro valor2){
-    retorne valor1 * valor2
-  }
-
- 
+  
   
   funcao inicio() {
-  escreva(soma(5,2))
-  escreva("\n")
-  escreva(soma (10,8))
-  escreva("\n")
-  escreva(multiplicacao(2,3))
+  real valor, valorFinal
+  escreva("Digite o valor da compra: R$")
+  leia(valor)
+  valorFinal = calcularDesconto(valor) 
+  valorFinal = Matematica.arredondar(valorFinal,2) 
+  escreva("Valor final da compra: R$ ", valorFinal)
   }
 }
