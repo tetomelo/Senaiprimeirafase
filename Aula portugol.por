@@ -1,33 +1,30 @@
 programa {
-
-  inclua biblioteca Matematica
-
   funcao inicio() {
-  cadeia nome 
-  real nota1, nota2, nota3, media, frequencia
-  escreva("Digite o nome do aluno: ")
-  leia(nome) 
-  escreva("Digite a primeira nota: ")
-  leia(nota1)
-  escreva("Digite a segunda nota: ")
-  leia(nota2)
-  escreva("Digite a terceira nota: ")
-  leia(nota3)
-  media = (nota1 + nota2 + nota3) / 3
-  media = Matematica.arredondar(media,2)
-  // escreva(media)
-  escreva("De 0 a 1, digte a frequencia: ")
-  leia(frequencia)
-  frequencia = frequencia * 100
-  limpa()
-  escreva(nome, " sua média final é: ", media, "\n E sua frequencia é ", frequencia, "% \n")
-  se(media>=7 e frequencia>=8){
-    escreva("Aprovado!")
-  } senao {
-    escreva("Reprovado!")
+  inteiro valor_original, valor, notas100, notas50, notas20, notas10, notas5, notas2, notas1 
+  escreva("Digite o valor em reais: ")
+  leia(valor_original) 
+  valor = valor_original
+  notas100 = valor / 100 // 5
+  valor = valor % 100 // 76
+  notas50 = valor / 50 // 1
+  valor = valor % 50 //26
+  notas20 = valor / 20 // 1
+  valor = valor % 20 // 6
+  notas10 = valor / 10 // 0
+  valor = valor % 10 // 6
+  notas5 = valor / 5 // 1
+  valor = valor % 5 // 1
+  notas2 = valor / 2 // 0
+  valor = valor % 2 // 1
+  notas1 = valor
+  escreva("Valor: R$" + valor_original)
+  escreva("\nNotas R$100: " + notas100)
+  escreva("\nNotas R$50: " + notas50)
+  escreva("\nNotas R$20: " + notas20)
+  escreva("\nNotas R$10: " + notas10)
+  escreva("\nNotas R$5: " + notas5)
+  escreva("\nNotas R$2: " + notas2)
+  escreva("\nNotas R$1: " + notas1)
+
   }
-
-
-
-    }
 }
