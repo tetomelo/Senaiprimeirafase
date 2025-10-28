@@ -1,20 +1,20 @@
-/*{
+/* {
 
 } */
 
-/* button{
-    background-color: black;
-    color: azure;
-    border: none;
+ button{
+    background-color: rgb(0, 36, 6);
+    color: rgb(2, 71, 2);
+    /* border: none; */
     border-radius: 5px;
 }
 
 #btCadastrar{
-    color: darkslategray;
-} */
+    color: rgb(146, 221, 15);
+} 
 
 #formLogin{
-    /* background-color: rgb(187, 189, 202); */
+    background-color: rgb(2, 70, 19);
     width: 50%;
 
     display: flex;
